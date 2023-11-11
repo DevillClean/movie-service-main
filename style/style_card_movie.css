@@ -1,0 +1,143 @@
+/*For cards movies*/
+
+.conteiner{
+    width: 96%;
+    margin: 7% auto 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.movies{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie{
+    width: 300px;
+    padding: 10px;
+    margin: 0 2% 72px;
+    position: relative;
+}
+
+.movie:hover{
+    background-color: #f6f6f60d;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+    margin-bottom: 30px;
+}
+
+.movie__cover-inner{
+    width: 270px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#movie__button_a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+.movier_cover{
+    width: 100%;
+}
+
+.movie__title{
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: #F7F7F7;
+    border-bottom: solid 3px transparent;
+    border-image: linear-gradient(90deg, rgba(255, 194, 4, 0.5) 0%, rgba(255, 194, 4, 0.5) 66.33%, rgba(161, 132, 40, 0) 66.39%, rgba(196, 196, 196, 0) 100%) 0 0 100% 0;
+}
+
+.movie__category{
+    width: 100%;
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(247, 247, 247, 0.75);
+    white-space: normal;
+}
+
+.movie__average{
+    position: absolute;
+    top: 0;
+    left: 3%;
+    font-family: 'Lato', sans-serif;
+    color: #F7F7F7;
+    font-weight: 900;
+    font-size: 24px;
+    padding: 1% 3%;
+    border-radius: 10%;
+}
+
+.movie__average--green{
+    background-color: #23e506;
+}
+
+.movie__average--yellow{
+    background-color: #dee506;
+}
+
+.movie__average--red{
+    background-color: #e50606;
+}
+
+.movie__button-add{
+    display: none;
+    background: #FFC204;
+    border: 1px solid #363636;
+    padding: 5px 5%;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 21px;
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #363636;
+    margin-left: 60%;
+}
+
+.movie:hover .movie__button-add{
+    display: block;
+}
+
+.movie:hover .movie__cover-darkened{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: #3636363d;
+}
+
+.movie__button-add:hover{
+    background:#F6F6F6;
+}
+
+.movie__button-delete{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: #FFC204;
+    border: 4px solid #363636;
+    top: 0;
+    left: 87%;
+    padding: 1%;
+    border-radius: 50%;
+}
+
+.movier_cross{
+    width: 80%;
+    display: block;
+    margin: auto;
+}

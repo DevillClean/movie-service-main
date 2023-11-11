@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Library</title>
+        <link rel="stylesheet" href = "../style/style_main.css" type = "text/css">
+        <link rel="stylesheet" href = "../style/style_panel_filter.css" type = "text/css">
+        <link rel="stylesheet" href = "../style/style_card_movie.css" type = "text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header__div">
+                <form>
+                    <input id="input-search" type="text" placeholder="Поиск" style="background-color: #808080;" disabled>
+                </form>
+                <button id="button-filter" disabled><img id="button-filter-icon" src="../Images/filter.svg"></button>
+            </div>
+            
+            <nav>
+                <a class="nav__a" href="index.html">Глобальная библиотека</a>
+                <a class="nav__a" href="#">Личная библиотека</a>
+            </nav>
+        </header>
+
+        <div id="panel-filter">
+            <div class="panel-filter__conteiner">
+                <p class="filter__title">Выберите фильтр</p>
+                <div class="filter_data">
+                    <p class="filter_data__title">По дате:</p>
+                    <div class="filter_data__inner">
+                        <p class="filter_data__text">С:</p>
+                        <input class="fitter_input__data" type="date">
+                    </div>
+                    
+                    <div class="filter_data__inner">
+                        <p class="filter_data__text">До:</p>
+                        <input class="fitter_input__data" type="date">
+                    </div>
+                </div>
+
+                <div class="filter_data">
+                    <p class="filter_data__title">По жанру:</p>
+                    <select class="filter__category">
+                        <option selected>Жанры</option>
+                        <option>Боевик</option>
+                        <option>Детектив</option>
+                        <option>Драма</option>
+                        <option>Комедия</option>
+                        <option>Приключения</option>
+                        <option>Супергероика</option>
+                        <option>Триллер</option>
+                        <option>Ужасы</option>
+                        <option>Фэнтези</option>
+                    </select>
+                </div>
+
+                <div class="filter_data">
+                    <p class="filter_data__title">По странам:</p>
+                </div>
+
+                <button>Применить фильтры</button>
+            </div>
+        </div>
+
+        <div class="conteiner">
+           <div class="movies"></div>
+        </div>
+        <script src="../js/script.js"></script>
+        <script src="../js/app_personalLibrary.js"></script>
+    </body>
+</html>

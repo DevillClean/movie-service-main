@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Film</title>
+        <link rel="stylesheet" href = "../style/style_main.css" type = "text/css">
+        <link rel="stylesheet" href="../style/style_pageFilm.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header__div">
+                <form>
+                    <input id="input-search" type="text" placeholder="Поиск" style="background-color: #808080;" disabled>
+                </form>
+                <button id="button-filter"><img id="button-filter-icon" src="../Images/filter.svg"></button>
+            </div>
+            
+            <nav>
+                <a class="nav__a" href="index.html">Глобальная библиотека</a>
+                <a class="nav__a" href="personalLibrary.html">Личная библиотека</a>
+            </nav>
+        </header>
+        <button class="movie__button_add" id="add_Feedback" onclick="addFeedback()">Добавить отзыв</button>
+    <div id="conteiner_Feedback" style="display:none;">
+            <div class="conteiner_Feedback-inner">
+                <input type="text" style="width:30%" id="username" placeholder="Имя">
+                <input type="text" style="width:50%" id="userjob" placeholder="Род занятий">
+            </div>
+            <textarea id="feedback"  rows="5" placeholder="Текст отзыва"></textarea >
+            <input id="film_score" type="number" min="1" max="10" style="width: 18%;"  placeholder="Оценка фильма">
+            <button class="movie__button_add" style="width: 20%; margin-left: 80%;" id="send_Feedback" onclick="sendFeedback()">Отправить отзыв</button>
+    </div>
+    <div id="conteiner__feedbacks"></div>
+        <script src="../js/treiler_and_reviews.js"></script>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+/*Panel filter*/
+
+#panel-filter{
+    width: 520px;
+    height: 100%;
+    position: fixed;
+    display: block;
+    left: -520px;
+    top: 0;
+    padding: 7% 1%;
+    background-color: #f6f6f682;
+    backdrop-filter: blur(5px);
+    transition: left 1s;
+    z-index: 200;
+}
+
+#panel-filter.active {
+    left: 0;
+    transition: left 1s;
+}
+
+.filter__title{
+    font-size: 42px;
+    color: #363636d8;
+    font-family:  'Caveat', cursive;
+    font-weight: 900;
+    border-bottom: solid 3px transparent;
+    margin-bottom: 5%;
+    border-image: linear-gradient(90deg, rgba(255, 192, 4, 0.984) 0%, rgba(255, 192, 4, 0.984) 66.33%, rgba(161, 132, 40, 0) 66.39%, rgba(196, 196, 196, 0) 100%) 0 0 100% 0;
+}
+
+.filter_data{
+    margin-bottom: 5%;
+}
+
+.filter_data__title{
+    font-size: 32px;
+    color: #363636d8;
+    font-family:  'Caveat', cursive;
+    font-weight: 600;
+}
+
+.filter_data__inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 2%;
+}
+
+.filter_data__text{
+    display: block;
+    width: 10%;
+    font-size: 24px;
+    color: #363636d8;
+    font-family:  'Caveat', cursive;
+    font-weight: 500;
+    margin-right: 2%;
+}
+
+.fitter_input__data{
+    width: 60%;
+    background: #F7F7F7;
+    border: 2px solid #363636;
+    border-radius: 11px;
+    padding: 1% 2%;
+}
+
+.filter__category{
+    color: #363636;
+}
+
+select{
+    width: 60%;
+    background: #F7F7F7;
+    border: 2px solid #363636;
+    border-radius: 11px;
+    padding: 1% 2%;
+    color: #363636d8;
+    font-family:  'Caveat', cursive;
+    font-size: 24px;
+}
+
+#button_add_filter{
+    background: #FFC204;
+    border: 1px solid #363636;
+    padding: 5px 5%;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 21px;
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #363636;
+    margin-left: 50%;
+}
+
+#button_add_filter:hover{
+    background: #F7F7F7;
+}
